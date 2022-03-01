@@ -9,15 +9,13 @@ const MainNav = () => {
           <a href="#hero">Intro</a>
         </li>
         <li>
-          <a smooth href="#about">
-            About
-          </a>
+          <a href="#about">About</a>
         </li>
         <li>
           <a href="#sign-up">Sign Up</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contacts">Contact</a>
         </li>
       </ul>
     </StyledMainNav>

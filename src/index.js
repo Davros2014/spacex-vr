@@ -4,9 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+import GlobalStyles from "./components/theme/globalStyles";
+
+//theme styles
+import { ThemeProvider } from "styled-components";
+import { Theme } from "./components/theme/theme";
+
 render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={Theme}>
+      <GlobalStyles />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
