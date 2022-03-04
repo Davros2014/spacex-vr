@@ -23,8 +23,8 @@ const StyledFooter = styled.footer`
     bottom: 0;
     background: linear-gradient(
       to top,
-      ${(props) => props.theme.mainColors.primaryColor} 25%,
-      #eee 50%
+      black 25%,
+      rgba(0, 0, 0, 0.6) 50%
     );
     opacity: 0.5;
     mix-blend-mode: multiply;

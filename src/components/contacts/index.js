@@ -13,17 +13,17 @@ const Contacts = () => {
   return (
     <StyledFooter id="contacts">
       <div className="footerWrapper" id="contact">
-        <h6>
-          Space X <br />
-          <br />
+        <h4>
           SpaceX designs, manufactures and launches the world's most advanced
           rockets and spacecraft <br />
+          <br />
           You want to wake up in the morning and think the future is going to be
           great - and that’s what being a spacefaring civilization is all about.
           It’s about believing in the future and thinking that the future will
           be better than the past. And I can’t think of anything more exciting
-          than going out there and being among the stars.
-        </h6>
+          than going out there and being among the stars.{" "}
+          <cite> - Elon Musk</cite>
+        </h4>
         <div className="contactsContainer">
           <div className="contactsItem">
             <h6>Space X</h6>
@@ -85,7 +85,7 @@ const Contacts = () => {
           </div>
         </div>
         <div className="socialNav">
-          <Logo width="120px" fill1="rgb(177, 176, 177, 0.73)" />
+          <Logo width="120px" swooshFill="lightblue" textFill="white" />
           <div className="socialList">
             <a
               target="_blank"
