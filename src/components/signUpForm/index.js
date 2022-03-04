@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import StyledSignUpForm from "./signUp.styles";
 
 const SignUpForm = () => {
-  const [signedUp, setSignedUp] = useState(false);
+  // const [signedUp, setSignedUp] = useState(false);
   return (
     <StyledSignUpForm>
       <input placeholder="Enter first name" />
