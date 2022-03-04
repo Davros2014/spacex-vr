@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+import mobileBg from "../../assets/actionvance-t7EL2iG3jMc-unsplash.jpg";
+import tabletBg from "../../assets/actionvance-t7EL2iG3jMc-unsplash.jpg";
+import desktopBg from "../../assets/actionvance-t7EL2iG3jMc-unsplash.jpg";
+
 const StyledFooter = styled.footer`
   display: flex;
   align-items: center;
@@ -14,6 +18,17 @@ const StyledFooter = styled.footer`
   color: ${(props) => props.theme.mainColors.footerText};
   background: ${(props) => props.theme.mainColors.veryDarkGrey};
   position: relative;
+  background-image: url(${mobileBg});
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Archivo', sans-serif;
+
+  @media (min-width: ${(props) => props.theme.media.tablet}) {
+    background-image: url(${tabletBg});
+  }
+  @media (min-width: ${(props) => props.theme.media.desktop}) {
+    background-image: url(${desktopBg});
+  }
   &::after {
     content: "";
     position: absolute;
@@ -42,6 +57,8 @@ const StyledFooter = styled.footer`
       margin: 3rem 0;
       font-size: clamp(1.6rem, 1.25vw, 1.8rem);
       line-height: 1.6;
+      font-family: 'Archivo', sans-serif;
+
       letter-spacing: 0.25;
       @media (min-width: ${(props) => props.theme.media.desktop}) {
         max-width: 60%;
@@ -49,7 +66,8 @@ const StyledFooter = styled.footer`
     }
     & .contactsContainer {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       grid-template-columns: repeat(4, 1fr);
       line-height: 1.5;
       border-top: 1px solid ${(props) => props.theme.mainColors.lightLineColor};
@@ -58,9 +76,12 @@ const StyledFooter = styled.footer`
       padding: 2rem 0;
       @media (min-width: ${(props) => props.theme.media.desktop}) {
         display: grid;
+        flex-direction: column;
+        flex-wrap: no-wrap;
       }
       & .contactsItem {
         grid-area: 1 / span 1;
+        flex: 0 0 33.333333%;
         & h6 {
           color: white;
           text-transform: uppercase;
@@ -71,7 +92,11 @@ const StyledFooter = styled.footer`
           letter-spacing: 1.75;
           @media (min-width: ${(props) => props.theme.media.desktop}) {
             margin-bottom: 1rem;
+            
           }
+        }
+        &:last-child {
+        flex: 0 0 100%;
         }
         & ul {
           & li {
@@ -161,6 +186,7 @@ const StyledFooter = styled.footer`
           }
         }
       }
+      
     }
     & .socialNav {
       margin: 4rem 0 2rem 0;

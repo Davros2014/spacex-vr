@@ -10,11 +10,16 @@ import GlobalStyles from "./components/theme/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { Theme } from "./components/theme/theme";
 
+//contexts
+import { DeviceProvider } from "./context/deviceContext";
+
 render(
   <React.StrictMode>
     <ThemeProvider theme={Theme}>
-      <GlobalStyles />
-      <App />
+      <DeviceProvider>
+        <GlobalStyles />
+        <App />
+      </DeviceProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")

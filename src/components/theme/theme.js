@@ -1,5 +1,5 @@
 const colors = {
-  primaryColor: "rgba(230, 39, 99, 1)",
+  primaryColor: "rgba(28, 128, 204, 1)",
   primaryColorRGB: "230, 39, 99",
   secondaryColor: "rgba(26, 25, 21, 1)",
   thirdColor: "rgba(192, 174, 160, 1)",
@@ -13,7 +13,6 @@ const colors = {
   complimentaryColor: "rgba(102, 102, 102, 1)",
   offWhite: "#e9e9e9",
   lightAccentColor: "rgba(230, 228, 223, 1)",
-  canvasColor: "rgba(41, 41, 41, 1)",
   footerColor: "rgba(32, 32, 32, 1)",
   footerText: "rgba(145, 145, 145, 1)",
   lightGreyColor: "rgba(230, 228, 223, 0.5)",
@@ -108,6 +107,11 @@ export const Theme = {
     footerTextheader: {
       fontSize: "clamp(1.45rem, 2vw, 1.6rem)",
       fontFamily: serif,
+      color: primaryColor,
+    },
+    linkTextheader: {
+      fontSize: "clamp(1.45rem, 2vw, 1.6rem)",
+      fontFamily: body,
       color: primaryColor,
     },
   },
