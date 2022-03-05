@@ -11,6 +11,7 @@ const StyledSignUpPage = styled.section`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
   background-image: url(${mobileBg});
   background-position: center center;
   background-size: cover;
@@ -19,17 +20,18 @@ const StyledSignUpPage = styled.section`
     background-image: url(${desktopBg});
   }
   & .vr-headset {
-    position: absolute;
-    top: 5%;
-    left: 20%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     width: 60%;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-40%);
+    transform: translateX(10%);
     @media (min-width: ${(props) => props.theme.media.desktop}) {
+      position: absolute;
       width: 30%;
-      top: 5%;
-      left: 20%;
+      top: 7%;
+      left: 16%;
       width: 30%;
       transform: translateX(0);
     }

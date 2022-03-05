@@ -1,39 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import StyledSignUpForm from "./signUpForm.styles";
 
-const SignUpForm = () => {
+//import hooks
+import useInputState from "../../hooks/useInputState";
+import MainBtn from "../mainBtn";
+import { Header5 } from "../typography";
+
+const SignUpForm = ({ handleSubmit }) => {
+  // const [first, setFirst] = useState("");
+  // const [last, setLast] = useState("");
+  // const [email, setEmail] = useState("");
+
+  const [value, handleChange, reset] = useInputState([]);
+  const [isActive, setIsActive] = useState(false);
+  const handleClick = (e) => {
+    e.preventDefault();
+    handleSubmit();
+    reset();
+  };
+
   return (
-    <StyledSignUpForm>
-      <input
-        name="first"
-        placeholder="First name"
-        autoComplete="off"
-        autoCorrect="off"
-        spellCheck="false"
-      />
-      <input
-        name="last"
-        placeholder="Last name"
-        autoComplete="off"
-        autoCorrect="off"
-        spellCheck="false"
-      />
-      <input
-        name="email"
-        placeholder="Email address"
-        autoComplete="off"
-        autoCorrect="off"
-        spellCheck="false"
-      />
-      <button
-        className="submitBtn"
-        type="submit"
-        onClick={(e) => this.submit()}
-        text="Submit"
-      >
-        Submit
-      </button>
-    </StyledSignUpForm>
+    <>
+      <StyledSignUpForm>
+        <Header5>
+          For the opportunity to go into the virtual unknown or for more
+          information about the initiative, please register below
+        </Header5>
+        <input
+          name="first"
+          value={value}
+          placeholder="First name"
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck="false"
+          onChange={handleChange}
+        />
+        <input
+          name="last"
+          value={value}
+          placeholder="Last name"
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck="false"
+          onChange={handleChange}
+        />
+        <input
+          name="email"
+          value={value}
+          placeholder="Email address"
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck="false"
+          onChange={handleChange}
+        />
+      </StyledSignUpForm>
+      {value && (
+        <MainBtn
+          className="submitBtn"
+          type="submit"
+          text="Submit"
+          onClick={handleClick}
+        >
+          Submit
+        </MainBtn>
+      )}
+    </>
   );
 };
 

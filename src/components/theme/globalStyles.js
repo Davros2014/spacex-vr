@@ -79,6 +79,9 @@ const GlobalStyles = createGlobalStyle`
 	font-size: 1rem;
 	line-height: 1.4rem;
 	}
+	.submitBtn {
+	  margin-top: 3rem;
+	}
 	.canvasField {
 	    display: flex;
 	    flex-direction: column;
@@ -134,6 +137,8 @@ const GlobalStyles = createGlobalStyle`
             width: 40vw;
         }
      }
+	 
+	 
 
 `;
 

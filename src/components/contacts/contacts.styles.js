@@ -51,10 +51,11 @@ const StyledFooter = styled.footer`
     width: 80vw;
     margin: 0 auto;
     & h4 {
+      color: #56ec8c;
       color: ${(p) => p.theme.mainColors.primaryColor};
       width: 100%;
       margin: 3rem 0;
-      font-size: clamp(1.6rem, 1.25vw, 1.8rem);
+      font-size: clamp(1.6rem, 2.25vw, 2.8rem);
       line-height: 1.6;
       font-family: 'Archivo', sans-serif;
       letter-spacing: 0.25;
@@ -68,11 +69,11 @@ const StyledFooter = styled.footer`
       flex-wrap: wrap;
       grid-template-columns: repeat(4, 1fr);
       line-height: 1.5;
-      border-top: 1px solid ${(props) => props.theme.mainColors.lightLineColor};
+      border-top: 1px solid ${(p) => p.theme.mainColors.lightLineColor};
       border-bottom: 1px solid
-        ${(props) => props.theme.mainColors.lightLineColor};
+        ${(p) => p.theme.mainColors.lightLineColor};
       padding: 2rem 0;
-      @media (min-width: ${(props) => props.theme.media.desktop}) {
+      @media (min-width: ${(p) => p.theme.media.desktop}) {
         display: grid;
         flex-direction: column;
         flex-wrap: no-wrap;
@@ -88,9 +89,8 @@ const StyledFooter = styled.footer`
           margin-bottom: 0;
           font-size: clamp(1.1rem, 1.15vw, 1.25rem);
           letter-spacing: 1.75;
-          @media (min-width: ${(props) => props.theme.media.desktop}) {
-            margin-bottom: 1rem;
-            
+          @media (min-width: ${(p) => p.theme.media.desktop}) {
+            margin-bottom: 1rem;  
           }
         }
         &:last-child {
@@ -104,7 +104,7 @@ const StyledFooter = styled.footer`
               color: rgba(255, 255, 255, 0.75);
               font-size: clamp(1rem, 1.25vw, 1.25rem);
               margin-bottom: 3rem;
-              @media (min-width: ${(props) => props.theme.media.desktop}) {
+              @media (min-width: ${(p) => p.theme.media.desktop}) {
                 margin-bottom: 0;
               }
               &::after {
@@ -124,12 +124,12 @@ const StyledFooter = styled.footer`
               &:hover {
                 cursor: pointer;
                 color: white;
-                transition: ${(props) => props.theme.effects.fastTransition};
+                transition: ${(p) => p.theme.effects.fastTransition};
               }
               &:hover::after {
                 opacity: 1;
                 left: -20px;
-                transition: ${(props) => props.theme.effects.fastTransition};
+                transition: ${(p) => p.theme.effects.fastTransition};
               }
             }
           }

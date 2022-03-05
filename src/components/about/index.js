@@ -1,6 +1,6 @@
 import React from "react";
 import StyledAbout from "./about.styles";
-import { Header1, Header5, SmallBodyText } from "../typography";
+import { Header2, Header5, SmallBodyText } from "../typography";
 import { GridContainer } from "../structure";
 
 const About = () => {
@@ -9,12 +9,17 @@ const About = () => {
       <GridContainer>
         <div className="panelLeft">
           <Header5>So, did you ever dream about becoming an astronaut?</Header5>
-          <Header1>SPACE</Header1>
+          <Header2>Do you have the wanderlust for space travel*</Header2>
           <SmallBodyText>
-            Let’s face it; if you want to go to space, you might as well
-            genuinely go to outer space and not hover kind of on the edge of it.
-            Well sit back, and relax because we’ll give you a truly out of this
-            world experience!
+            As part of our initiative we plan to aid the elderly population
+            during those difficult times. By providing 10.000 free VR glasses
+            with three amazing space excursions to circulate around the world
+            and by 10.000 additional passes to the space excursions for those
+            who already have access to VR goggles.
+            <br />
+            Further, SpaceX is looking to find more partners who want to join
+            the initiative with differently themed VR excursions, to cover other
+            unique topics.
           </SmallBodyText>
         </div>
       </GridContainer>

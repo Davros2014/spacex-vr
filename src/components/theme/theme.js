@@ -1,6 +1,6 @@
 const colors = {
-  primaryColor: "rgba(28, 128, 204, 1)",
-  primaryColorRGB: "230, 39, 99",
+  primaryColor: "rgba(76, 160, 224, 1)",
+  primaryColorRGB: "76, 160, 224",
   secondaryColor: "rgba(26, 25, 21, 1)",
   thirdColor: "rgba(192, 174, 160, 1)",
   lineColor: "rgba(0, 0, 0, 0.15)",
@@ -32,16 +32,16 @@ const fontFamilies = {
 };
 const { heading, body, serif } = fontFamilies;
 // const { primaryColor, secondaryColor, primaryTextColor } = colors;
-const { primaryTextColor, primaryColor } = colors;
+const { primaryTextColor, primaryColor, offWhite } = colors;
 export const Theme = {
   typeStyles: {
     header1: {
       as: "h1",
-      fontSize: "clamp(3.2rem, 2.25vw, 4.2rem)",
+      fontSize: "clamp(3.2rem, 2.5vw, 4.2rem)",
       fontWeight: 700,
       lineHeight: ["32px", "36px", "56px"],
       fontFamily: heading,
-      color: primaryTextColor,
+      color: offWhite,
     },
     header2: {
       as: "h2",
@@ -50,6 +50,14 @@ export const Theme = {
       fontFamily: heading,
       lineHeight: ["20px", "26px", "32px"],
       color: primaryTextColor,
+    },
+    header3: {
+      as: "h3",
+      fontSize: "clamp(2.2rem, 1.8vw, 2.4rem)",
+      fontWeight: 700,
+      fontFamily: heading,
+      lineHeight: ["20px", "26px", "32px"],
+      color: offWhite,
     },
     header4: {
       as: "h4",
@@ -61,7 +69,7 @@ export const Theme = {
     },
     header5: {
       as: "h5",
-      fontSize: "clamp(1.5rem, 2vw, 1.75rem)",
+      fontSize: "clamp(1.8rem, 2vw, 2rem)",
       fontWeight: 700,
       fontFamily: heading,
       lineHeight: ["22px", "22px", "24px"],
