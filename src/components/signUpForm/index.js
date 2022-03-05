@@ -2,7 +2,7 @@ import React from "react";
 import StyledSignUpForm from "./signUpForm.styles";
 
 //import hooks
-import useInputState from "../../hooks/useInputState";
+import { useInputState } from "../../hooks/useInputState";
 import MainBtn from "../mainBtn";
 import { Header5 } from "../typography";
 
@@ -11,8 +11,7 @@ const SignUpForm = ({ handleSubmit }) => {
   // const [last, setLast] = useState("");
   // const [email, setEmail] = useState("");
 
-  const [value, handleChange, reset] = useInputState([]);
-  // const [isActive, setIsActive] = useState(false);
+  const [value, handleChange, reset] = useInputState("");
   const handleClick = (e) => {
     e.preventDefault();
     handleSubmit();
