@@ -1,7 +1,7 @@
 const colors = {
   primaryColor: "rgba(76, 160, 224, 1)",
   primaryColorRGB: "76, 160, 224",
-  secondaryColor: "rgba(26, 25, 21, 1)",
+  secondaryColor: "#0b0c19",
   thirdColor: "rgba(192, 174, 160, 1)",
   lineColor: "rgba(0, 0, 0, 0.15)",
   lightLineColor: "rgba(270, 270, 270, 0.15)",

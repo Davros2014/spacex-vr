@@ -1,23 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import StyledSignUpForm from "./signUpForm.styles";
 
 //import hooks
-import useInputState from "../../hooks/useInputState";
 import MainBtn from "../mainBtn";
 import { Header5 } from "../typography";
 
 const SignUpForm = ({ handleSubmit }) => {
-  // const [first, setFirst] = useState("");
-  // const [last, setLast] = useState("");
-  // const [email, setEmail] = useState("");
+  const [first, setFirst] = useState("");
+  const [last, setLast] = useState("");
+  const [email, setEmail] = useState("");
 
-  const [value, handleChange, reset] = useInputState("");
   const handleClick = (e) => {
     e.preventDefault();
     handleSubmit();
-    reset();
+    setFirst("");
+    setLast("");
+    setEmail("");
   };
-
   return (
     <>
       <StyledSignUpForm>
@@ -27,33 +26,33 @@ const SignUpForm = ({ handleSubmit }) => {
         </Header5>
         <input
           name="first"
-          value={value}
           placeholder="First name"
+          value={first}
           autoComplete="off"
           autoCorrect="off"
           spellCheck="false"
-          onChange={handleChange}
+          onChange={(e) => setFirst(e.target.value)}
         />
         <input
           name="last"
-          value={value}
           placeholder="Last name"
+          value={last}
           autoComplete="off"
           autoCorrect="off"
           spellCheck="false"
-          onChange={handleChange}
+          onChange={(e) => setLast(e.target.value)}
         />
         <input
           name="email"
-          value={value}
           placeholder="Email address"
+          value={email}
           autoComplete="off"
           autoCorrect="off"
           spellCheck="false"
-          onChange={handleChange}
+          onChange={(e) => setEmail(e.target.value)}
         />
       </StyledSignUpForm>
-      {value && (
+      {first && last && email && (
         <MainBtn
           className="submitBtn"
           type="submit"

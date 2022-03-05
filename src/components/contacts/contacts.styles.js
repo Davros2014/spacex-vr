@@ -50,17 +50,19 @@ const StyledFooter = styled.footer`
     min-height: 10rem;
     width: 80vw;
     margin: 0 auto;
-    & h4 {
+    & h3 {
       color: #56ec8c;
-      color: ${(p) => p.theme.mainColors.primaryColor};
+      color: ${(p) => p.theme.mainColors.offWhite};
       width: 100%;
       margin: 3rem 0;
-      font-size: clamp(1.6rem, 2.25vw, 2.8rem);
       line-height: 1.6;
       font-family: 'Archivo', sans-serif;
       letter-spacing: 0.25;
       @media (min-width: ${(props) => props.theme.media.desktop}) {
         max-width: 60%;
+      }
+      & span {
+        color: ${(p) => p.theme.mainColors.primaryColor};
       }
     }
     & .contactsContainer {

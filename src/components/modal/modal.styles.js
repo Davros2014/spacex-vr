@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 const bounceIn = keyframes` {
     0% { transform: translate(-50%, -50%) scale(1); }
-    90% { transform: translate(-50%, -50%) scale(1.2); }
+    90% { transform: translate(-50%, -50%) scale(1.05); }
     100% { transform: translate(-50%, -50%) scale(1); }   
 }`;
 
@@ -22,7 +22,6 @@ const StyledModal = styled.div`
   &.active {
     opacity: 1;
     display: flex;
-    animation: 0.25s ${bounceIn} forwards ease-in-out;
   }
   & div {
     position: absolute;
@@ -44,7 +43,7 @@ const StyledModal = styled.div`
     align-items: center;
   }
   &.active div {
-    transform: translate(-50%, -50%) scale(1);
+    animation: 0.15s ${bounceIn} forwards ease-in-out;
   }
 `;
 

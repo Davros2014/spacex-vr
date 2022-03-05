@@ -8,21 +8,26 @@ import {
   Twitter,
   YouTube,
 } from "../Icons/Social";
+import { Header3 } from "../typography";
 
 const Contacts = () => {
   return (
     <StyledFooter id="contacts">
       <div className="footerWrapper" id="contact">
-        <h4>
-          SpaceX designs, manufactures and launches the world's most advanced
-          rockets and spacecraft <br />
+        <Header3>
+          <span>
+            SpaceX designs, manufactures and launches the world's most advanced
+            rockets and spacecraft
+          </span>
+          <br />
           <br />
           You want to wake up in the morning and think the future is going to be
           great - and that’s what being a spacefaring civilization is all about.
           It’s about believing in the future and thinking that the future will
           be better than the past. And I can’t think of anything more exciting
-          than going out there and being among the stars. - Elon Musk
-        </h4>
+          than going out there and being among the stars. -
+          <span> Elon Musk</span>
+        </Header3>
         <div className="contactsContainer">
           <div className="contactsItem">
             <h6>Space X</h6>
@@ -130,10 +135,3 @@ const Contacts = () => {
 };
 
 export default Contacts;
-
-// You want to wake up in the morning and think the future is going to be
-//           great - and that’s what being a spacefaring civilization is all about.
-//           It’s about believing in the future and thinking that the future will
-//           be better than the past. And I can’t think of anything more exciting
-//           than going out there and being among the stars.{" "}
-//           <cite> - Elon Musk</cite>

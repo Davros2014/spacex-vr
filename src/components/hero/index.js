@@ -23,7 +23,7 @@ const Hero = () => {
           <Header3>
             <span>*</span>The virtual world is there for you to explore! We
             realise it's been a difficult time of late for most people but
-            especially the elderly and/or isolated, that's why we are giving
+            especially for the elderly and isolated, that's why we are giving
             away
             <span> 10,000 virtual reality headsets</span>, this is a unique
             opportunity for a truly out of this world experience.
@@ -31,7 +31,7 @@ const Hero = () => {
             <span>Find out more below.</span>
           </Header3>
           <MainBtn className="introBtn" type="submit" text="Submit">
-            <a href="#about">Discover more?</a>
+            <a href="#about">Discover</a>
           </MainBtn>
         </div>
       </GridContainer>
