@@ -21,9 +21,10 @@ const Hero = () => {
         </div>
         <div className="panelRight">
           <Header3>
-            <span>*</span>A world virtual reality can open for you! We realise
-            it's been a difficult time of late for most people but especially
-            the elderly or isolated, that's why we are giving away
+            <span>*</span>The virtual world is there for you to explore! We
+            realise it's been a difficult time of late for most people but
+            especially the elderly and/or isolated, that's why we are giving
+            away
             <span> 10,000 virtual reality headsets</span>, this is a unique
             opportunity for a truly out of this world experience.
             <br />

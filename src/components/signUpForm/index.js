@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import StyledSignUpForm from "./signUpForm.styles";
 
 //import hooks
@@ -12,7 +12,7 @@ const SignUpForm = ({ handleSubmit }) => {
   // const [email, setEmail] = useState("");
 
   const [value, handleChange, reset] = useInputState([]);
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
     handleSubmit();

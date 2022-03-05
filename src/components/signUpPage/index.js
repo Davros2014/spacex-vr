@@ -17,7 +17,7 @@ const SignUpPage = () => {
     <StyledSignUpPage id="sign-up">
       <div className="vr-headset">
         <img alt="headset" src={vrHeadset} />
-        <Header1>10.000 free VR glasses</Header1>
+        <Header1>10,000 free VR glasses</Header1>
       </div>
       <SignUpForm handleSubmit={handleSubmit} />
       <Modal handleSubmit={handleSubmit} isActive={isActive} />
