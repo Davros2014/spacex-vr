@@ -26,7 +26,7 @@ const colors = {
   googleBtn: "rgba(20, 105, 231, 1)",
 };
 const fontFamilies = {
-  heading: "'Inter', Helvetica, Arial, sans-serif",
+  heading: "'Archivo', sans-serif",
   body: "'Inter', Helvetica, Arial, sans-serif",
   serif: "'PT Serif', serif",
 };
