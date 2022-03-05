@@ -2,7 +2,7 @@ import React from "react";
 import StyledSignUpForm from "./signUpForm.styles";
 
 //import hooks
-import { useInputState } from "../../hooks/useInputState";
+import useInputState from "../../hooks/useInputState";
 import MainBtn from "../mainBtn";
 import { Header5 } from "../typography";
 
