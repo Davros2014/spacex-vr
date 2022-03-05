@@ -9,13 +9,13 @@ const StyledMainNav = styled.nav`
   &.mobileNav.active {
     transition: ${(props) => props.theme.effects.mediumTransition};
     transform: translateX(0);
+    opacity: 1;
   }
   & ul {
     display: flex;
     align-items: center;
     list-style-type: none;
     height: 2rem;
-
     & a {
       text-decoration: none;
       margin-left: 4rem;
@@ -44,18 +44,18 @@ const StyledMainNav = styled.nav`
         height: 10px;
         transform: translateY(-2.5rem);
       }
-      &.active {
-        color: red;
-      }
     }
   }
   &.mobileNav {
+    transition: ${(props) => props.theme.effects.mediumTransition};
+    opacity: 0;
     display: flex;
     background: rgba(0, 0, 0, 0.85);
     position: absolute;
     left: 0;
     transform: translateX(100%);
     background-image: url(${mobileBg});
+    background-size: cover;
     top: 0;
     width: 100%;
     height: 100vh;

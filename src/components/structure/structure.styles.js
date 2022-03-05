@@ -26,8 +26,8 @@ export const StyledGridContainer = styled.div`
     margin: 0 auto;
     width: 80vw;
     height: 100%;
-    padding-top: 14rem;
     grid-gap: ${gridGap};
+    // border: 1px solid red;
     grid-template-columns: repeat(12, 1fr);
   }
 `;

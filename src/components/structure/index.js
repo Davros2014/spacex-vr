@@ -1,6 +1,6 @@
 import React from "react";
 
-import { StyledAppContainer, StyledGridContainer } from "./Structure.styles.js";
+import { StyledAppContainer, StyledGridContainer } from "./structure.styles.js";
 export const AppContainer = ({ children }) => (
   <StyledAppContainer className="AppContainer">{children}</StyledAppContainer>
 );

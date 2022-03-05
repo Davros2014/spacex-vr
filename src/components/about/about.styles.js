@@ -14,7 +14,6 @@ const StyledAbout = styled.section`
   background-image: url(${mobileBg});
   background-position: center center;
   background-size: cover;
-
   @media (min-width: ${(props) => props.theme.media.desktop}) {
     background-image: url(${desktopBg});
   }

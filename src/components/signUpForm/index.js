@@ -2,14 +2,37 @@ import React from "react";
 import StyledSignUpForm from "./signUp.styles";
 
 const SignUpForm = () => {
-  // const [signedUp, setSignedUp] = useState(false);
   return (
     <StyledSignUpForm>
-      <input placeholder="Enter first name" />
-      <input placeholder="Enter last name" />
-      <input placeholder="hello" />
-      <input placeholder="hello" />
-      <button type="submit">SUBMIT</button>
+      <input
+        name="first"
+        placeholder="First name"
+        autoComplete="off"
+        autoCorrect="off"
+        spellCheck="false"
+      />
+      <input
+        name="last"
+        placeholder="Last name"
+        autoComplete="off"
+        autoCorrect="off"
+        spellCheck="false"
+      />
+      <input
+        name="email"
+        placeholder="Email address"
+        autoComplete="off"
+        autoCorrect="off"
+        spellCheck="false"
+      />
+      <button
+        className="submitBtn"
+        type="submit"
+        onClick={(e) => this.submit()}
+        text="Submit"
+      >
+        Submit
+      </button>
     </StyledSignUpForm>
   );
 };

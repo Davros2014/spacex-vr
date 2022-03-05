@@ -22,7 +22,6 @@ const StyledFooter = styled.footer`
   background-position: center center;
   background-size: cover;
   font-family: 'Archivo', sans-serif;
-
   @media (min-width: ${(props) => props.theme.media.tablet}) {
     background-image: url(${tabletBg});
   }
@@ -58,7 +57,6 @@ const StyledFooter = styled.footer`
       font-size: clamp(1.6rem, 1.25vw, 1.8rem);
       line-height: 1.6;
       font-family: 'Archivo', sans-serif;
-
       letter-spacing: 0.25;
       @media (min-width: ${(props) => props.theme.media.desktop}) {
         max-width: 60%;

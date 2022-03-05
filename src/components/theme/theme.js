@@ -46,14 +46,6 @@ export const Theme = {
     header2: {
       as: "h2",
       fontSize: "clamp(2.4rem, 2vw, 3rem)",
-      lineHeight: ["24px", "28px", "40px"],
-      fontWeight: 700,
-      fontFamily: heading,
-      color: primaryTextColor,
-    },
-    header3: {
-      as: "h3",
-      fontSize: "clamp(2rem, 1.8vw, 2.4rem)",
       fontWeight: 700,
       fontFamily: heading,
       lineHeight: ["20px", "26px", "32px"],
@@ -131,7 +123,7 @@ export const Theme = {
   effects: {
     boxShadow: `0px 0px 8px 4px rgba(${colors.boxShadow}, 0.095)`,
     boxShadowButtons: "0px 0px 4px rgba(0, 0, 0, 0.5)",
-    authBoxShadow: "0px 0px 10px 3px rgba(219, 218, 218, 0.5)",
+    authBoxShadow: "0px 0px 10px 8px rgba(219, 218, 218, 0.15)",
     smallBorderRadius: "4px",
     mediumBorderRadius: "8px",
     largeBorderRadius: "12px",
