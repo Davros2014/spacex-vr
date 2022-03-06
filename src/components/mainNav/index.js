@@ -19,7 +19,6 @@ const MainNav = () => {
     document.querySelector(".mobile-btn").classList.toggle("active");
     document.querySelector(".mobileNav").classList.toggle("active");
   };
-  console.log("desktop", isDesktop);
   return (
     <>
       <StyledMainNav className={isDesktop ? "" : "mobileNav"}>

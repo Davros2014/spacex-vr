@@ -50,7 +50,7 @@ const StyledFooter = styled.footer`
     min-height: 10rem;
     width: 80vw;
     margin: 0 auto;
-    & h3 {
+    & h5 {
       color: #56ec8c;
       color: ${(p) => p.theme.mainColors.offWhite};
       width: 100%;

@@ -29,7 +29,7 @@ const About = () => {
               Of course, it's not all about space (although we confess to being
               biased) -{" "}
               <span>
-                we are also giving away an addition 10,000 virtual excusions.
+                we are also giving away an additional 10,000 virtual excusions.
               </span>
               <br />
               <strong>
@@ -37,8 +37,6 @@ const About = () => {
                 partners who want to join the initiative with differently themed
                 VR excursions, covering unique, interesting topics.
               </strong>
-              <br />
-              <br />
               <span> Join us by registering below.</span>
             </LargeBodyText>
           </div>

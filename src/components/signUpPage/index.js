@@ -12,7 +12,6 @@ const SignUpPage = () => {
   const handleSubmit = () => {
     setIsActive(!isActive);
   };
-  console.log("isActive", isActive);
   return (
     <StyledSignUpPage id="sign-up">
       <div className="vr-headset">

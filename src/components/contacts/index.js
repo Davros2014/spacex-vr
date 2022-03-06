@@ -8,13 +8,13 @@ import {
   Twitter,
   YouTube,
 } from "../Icons/Social";
-import { Header3 } from "../typography";
+import { Header5 } from "../typography";
 
 const Contacts = () => {
   return (
     <StyledFooter id="contacts">
       <div className="footerWrapper" id="contact">
-        <Header3>
+        <Header5>
           <span>
             SpaceX designs, manufactures and launches the world's most advanced
             rockets and spacecraft
@@ -27,7 +27,7 @@ const Contacts = () => {
           be better than the past. And I can’t think of anything more exciting
           than going out there and being among the stars. -
           <span> Elon Musk</span>
-        </Header3>
+        </Header5>
         <div className="contactsContainer">
           <div className="contactsItem">
             <h6>Space X</h6>
