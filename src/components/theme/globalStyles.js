@@ -137,6 +137,10 @@ const GlobalStyles = createGlobalStyle`
             width: 40vw;
         }
      }
+	 .appContainer {
+		 display: flex;
+		 flex-direction: column;
+	 }
 	 
 	 
 

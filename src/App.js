@@ -7,7 +7,7 @@ import SignUpPage from "./components/signUpPage";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="appContainer">
       <Header />
       <Hero />
       <About />

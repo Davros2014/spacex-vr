@@ -4,7 +4,7 @@ const StyledSignUpForm = styled.form`
   height: auto;
   box-shadow: ${(props) => props.theme.effects.authBoxShadow};
   border-radius: 4px;
-  padding: 4rem 3rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,10 +17,14 @@ const StyledSignUpForm = styled.form`
   background: rgba(0, 0, 0, 0.5);
   @media (min-width: ${(props) => props.theme.media.desktop}) {
     width: 30vw;
+    padding: 4rem 3rem;
   }
   & h5 {
     color: ${(props) => props.theme.mainColors.primaryColor};
-    padding: 0 4rem;
+    padding: 0 1rem;
+    @media (min-width: ${(props) => props.theme.media.desktop}) {
+      padding: 0 4rem;
+    }
   }
   & input {
     border: none;

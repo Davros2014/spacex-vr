@@ -21,8 +21,8 @@ const SignUpForm = ({ handleSubmit }) => {
     <>
       <StyledSignUpForm>
         <Header5>
-          For the opportunity to go into the virtual unknown or for more
-          information about the initiative, please register below
+          For the opportunity to win or for more about the initiative, please
+          register below
         </Header5>
         <input
           name="first"

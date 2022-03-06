@@ -15,12 +15,8 @@ export const StyledGridContainer = styled.div`
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-  // margin-top: 14vh;
   width: 100vw;
   position: relative;
-  @media (min-width: ${(props) => props.theme.media.desktop}) {
-    margin-top: 20vh;
-  }
   @media (min-width: ${(props) => props.theme.media.desktop}) {
     display: grid;
     position: relative;
@@ -28,7 +24,6 @@ export const StyledGridContainer = styled.div`
     width: 80vw;
     height: 100%;
     grid-gap: ${gridGap};
-    // border: 1px solid red;
     grid-template-columns: repeat(12, 1fr);
   }
 `;
