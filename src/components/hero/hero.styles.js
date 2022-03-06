@@ -47,7 +47,7 @@ const StyledHero = styled.section`
     z-index: 4000;
     // display: none;
     @media (min-width: ${(props) => props.theme.media.desktop}) {
-      // animation: 20s ${fadeInOut} infinite ease-in-out;
+      animation: 20s ${fadeInOut} infinite ease-in-out;
       top: 60%;
       width: 30%;
     }
@@ -133,7 +133,7 @@ const StyledHero = styled.section`
       margin: 0 auto;
       margin-top: 5rem;
       padding: 5rem;
-      // animation: 10s ${pulse} infinite ease-in-out;
+      animation: 10s ${pulse} infinite ease-in-out;
       @media (min-width: ${(props) => props.theme.media.desktop}) {
         margin: 0;
         margin-top: 5rem;
