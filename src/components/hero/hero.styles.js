@@ -5,13 +5,13 @@ import desktopBg from "../../assets/background-home-desktop1.jpg";
 
 const pulse = keyframes`
  0% { transform: scale(1);}
- 5% { transform: scale(1.2);}
+ 5% { transform: scale(1.1);}
  10% { transform: scale(1);}
- 15% { transform: scale(1.2);}
+ 15% { transform: scale(1.1);}
  20% { transform: scale(1);}
- 25% { transform: scale(1.2);}
+ 25% { transform: scale(1.1);}
  30% { transform: scale(1);}
- 35% { transform: scale(1.2);}
+ 35% { transform: scale(1.1);}
  40% { transform: scale(1);}
  100% { transform: scale(1);}
 `;
@@ -49,6 +49,7 @@ const StyledHero = styled.section`
   }
   & .panelLeft {
     top: 40%;
+    position: relative;
     @media (min-width: ${(props) => props.theme.media.desktop}) {
       position: absolute;
       top: 40%;
@@ -58,10 +59,22 @@ const StyledHero = styled.section`
       margin-bottom: 0;
       text-align: left;
     }
-    & h5 {
+    & h3 {
       padding-right: 30%;
-      margin-bottom: 3.5rem;
-      color: ${(props) => props.theme.mainColors.primaryColor};
+      line-height: 1.15;
+      font-size: clamp(2rem, 3vw, 3rem);
+      background-color: ${(props) => props.theme.mainColors.primaryColor};
+      background-image: linear-gradient(45deg, #f3ec78, #af4261);
+      background-clip: text;
+      background-size: 100%;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      @media (min-width: ${(props) => props.theme.media.desktop}) {
+        margin-bottom: 3.5rem;
+      }
     }
     & h1 {
       margin-bottom: 0;
@@ -71,7 +84,7 @@ const StyledHero = styled.section`
       @media (min-width: ${(props) => props.theme.media.desktop}) {
         padding: 0;
         margin-bottom: 7.5rem;
-        font-size: clamp(6rem, 5vw, 12rem);
+        font-size: clamp(9rem, 5vw, 12rem);
       }
       & span {
         color: ${(props) => props.theme.mainColors.primaryColor};
@@ -94,10 +107,13 @@ const StyledHero = styled.section`
       grid-column: 6 / span 6;
       grid-row: 8 / span 2;
     }
-    & h3 {
+    & h5 {
       margin-top: 10rem;
       color: white;
       text-align: center;
+      letter-spacing: 0.025rem;
+      display: block;
+      position: relative;
       @media (min-width: ${(props) => props.theme.media.desktop}) {
         text-align: left;
       }
@@ -118,6 +134,7 @@ const StyledHero = styled.section`
     & button > a {
       color: white;
       font-weight: 700;
+      text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
     }
   }
 `;

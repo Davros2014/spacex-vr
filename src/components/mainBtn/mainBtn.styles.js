@@ -12,7 +12,25 @@ const StyledMainBtn = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     background: ${(props) => props.theme.mainColors.primaryColor};
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 100%;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.25) 0%,
+        transparent 100%
+      );
+      z-index: -1;
+    }
     &:hover {
         transform: scale(1.025);
         cursor: pointer;

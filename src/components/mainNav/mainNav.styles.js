@@ -21,6 +21,8 @@ const StyledMainNav = styled.nav`
       margin-left: 4rem;
       font-size: 1.4rem;
       color: ${(props) => props.theme.mainColors.primaryColor};
+      // color: #f3ec78;
+      font-weight: 700;
       position: relative;
       &:hover {
         cursor: pointer;

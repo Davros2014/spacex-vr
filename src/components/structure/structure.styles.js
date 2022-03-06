@@ -17,6 +17,7 @@ export const StyledGridContainer = styled.div`
   margin: 0 auto;
   // margin-top: 14vh;
   width: 100vw;
+  position: relative;
   @media (min-width: ${(props) => props.theme.media.desktop}) {
     margin-top: 20vh;
   }

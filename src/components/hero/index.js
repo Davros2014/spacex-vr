@@ -11,16 +11,16 @@ const Hero = () => {
       <GridContainer>
         <img className="astronaut" alt="astronaut" src={astronaut} />
         <div className="panelLeft">
-          <Header5>
+          <Header3>
             Have you ever dreamt of becoming an astronaut, ever fantasised about
-            floating off into space...?
-          </Header5>
+            floating through space...?
+          </Header3>
           <Header1>
             A world<span>*</span> of endless possibilities awaits
           </Header1>
         </div>
         <div className="panelRight">
-          <Header3>
+          <Header5>
             <span>*</span>The virtual world is there for you to explore! We
             realise it's been a difficult time of late for most people but
             especially for the elderly and isolated, that's why we are giving
@@ -28,10 +28,11 @@ const Hero = () => {
             <span> 10,000 virtual reality headsets</span>, this is a unique
             opportunity for a truly out of this world experience.
             <br />
+            <br />
             <span>Find out more below.</span>
-          </Header3>
+          </Header5>
           <MainBtn className="introBtn" type="submit" text="Submit">
-            <a href="#about">Discover</a>
+            <a href="#about">Discover more</a>
           </MainBtn>
         </div>
       </GridContainer>

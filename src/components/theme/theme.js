@@ -96,7 +96,7 @@ export const Theme = {
       as: "p",
       fontSize: "clamp(1.8rem, 2vw, 1.8rem)",
       fontFamily: body,
-      lineHeight: ["20px", "22px", "16px"],
+      lineHeight: ["20px", "22px", "24px"],
       color: primaryTextColor,
       letterSpacing: "0.015rem",
     },

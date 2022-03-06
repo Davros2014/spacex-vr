@@ -1,21 +1,47 @@
 import React from "react";
 import StyledAbout from "./about.styles";
-import { Header2, SmallBodyText } from "../typography";
+import { Header2, LargeBodyText } from "../typography";
 import { GridContainer } from "../structure";
 
 const About = () => {
   return (
     <StyledAbout id="about">
       <GridContainer>
-        <div className="panelTop">
-          <Header2>What's the story?</Header2>
-          <SmallBodyText>
-            As part of our initiative we plan to aid the elderly population
-            during those difficult times. By providing 10.000 free VR glasses
-            with three amazing space excursions to circulate around the world
-            and by 10.000 additional passes to the space excursions for those
-            who already have access to VR goggles.
-          </SmallBodyText>
+        <div className="mainPanel" id="topPanel">
+          <div className="circleBG" />
+          <div className="textContainer">
+            <Header2>What's the deal?</Header2>
+            <LargeBodyText className="infoTextBody">
+              We want to give somethign back to the broader community and raise
+              the public spirit during these difficult times. Virtual Reality is
+              not just a great new dimension of gaming and exploration but also
+              an aid against loneliness.
+            </LargeBodyText>
+          </div>
+        </div>
+        <div className="mainPanel" id="midPanel">
+          <div className="circleBG" />
+          <div className="textContainer">
+            <Header2>What's the deal?</Header2>
+            <LargeBodyText className="infoTextBody">
+              We want to give somethign back to the broader community and raise
+              the public spirit during these difficult times. Virtual Reality is
+              not just a great new dimension of gaming and exploration but also
+              an aid against loneliness.
+            </LargeBodyText>
+          </div>
+        </div>
+        <div className="mainPanel" id="bottomPanel">
+          <div className="circleBG" />
+          <div className="textContainer">
+            <Header2>What's the deal?</Header2>
+            <LargeBodyText className="infoTextBody">
+              We want to give somethign back to the broader community and raise
+              the public spirit during these difficult times. Virtual Reality is
+              not just a great new dimension of gaming and exploration but also
+              an aid against loneliness.
+            </LargeBodyText>
+          </div>
         </div>
       </GridContainer>
     </StyledAbout>
