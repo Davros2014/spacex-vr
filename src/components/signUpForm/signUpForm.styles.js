@@ -21,6 +21,7 @@ const StyledSignUpForm = styled.form`
   }
   & h5 {
     color: ${(props) => props.theme.mainColors.primaryColor};
+    color: #ffd875;
     padding: 0 1rem;
     @media (min-width: ${(props) => props.theme.media.desktop}) {
       padding: 0 4rem;
@@ -47,9 +48,7 @@ const StyledSignUpForm = styled.form`
       outline: none;
     }
     &:focus-within {
-      color: ${(props) => props.theme.mainColors.lightAccentColor};
-      color: ${(props) => props.theme.mainColors.primaryColor};
-      color: #56ec8c;
+      color: #ffd875;
       font-weight: 700;
     }
     &:focus::placeholder {
@@ -62,7 +61,7 @@ const StyledSignUpForm = styled.form`
       color: ${(props) => props.theme.mainColors.primaryColor};
     }
     &:active::placeholder {
-      color: pink;
+      color: ${(props) => props.theme.mainColors.primaryColor};
     }
     &::placeholder {
       font-size: 1.6rem;
@@ -72,7 +71,7 @@ const StyledSignUpForm = styled.form`
     }
     &:visited {
       font-size: 1.6rem;
-      color: #56ec8c;
+      color: #ffd875;
     }
   }
 `;

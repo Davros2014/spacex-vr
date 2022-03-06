@@ -11,6 +11,7 @@ export const StyledAppContainer = styled.div`
 `;
 export const StyledGridContainer = styled.div`
   width: 90vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;

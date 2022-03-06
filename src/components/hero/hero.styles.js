@@ -30,8 +30,9 @@ const StyledHero = styled.section`
   background-image: url(${mobileBg});
   background-position: center center;
   background-size: cover;
-  min-height: 100vh;
+  // min-height: 100vh;
   padding-top: 15vh;
+  // border: 2px solid green;
   @media (min-width: ${(props) => props.theme.media.desktop}) {
     background-image: url(${desktopBg});
     height: 100vh;
@@ -39,10 +40,10 @@ const StyledHero = styled.section`
   }
   & .astronaut {
     position: absolute;
-    left: -10%;
+    left: -2%;
     top: 80%;
     opacity: 1;
-    width: 50%;
+    width: 30%;
     z-index: 4000;
     // display: none;
     @media (min-width: ${(props) => props.theme.media.desktop}) {
@@ -87,7 +88,7 @@ const StyledHero = styled.section`
       line-height: 0.2;
       animation: 0.25s ${foldOut} forwards ease-in-out;
       padding: 0 4rem;
-      font-size: 6rem;
+      font-size: calc(4.5rem + 1vw);
       @media (min-width: ${(props) => props.theme.media.desktop}) {
         padding: 0;
         margin-bottom: 7.5rem;

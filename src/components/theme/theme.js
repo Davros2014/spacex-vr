@@ -207,5 +207,3 @@ export const DarkTheme = {
     // canvasColor: "rgba(255, 255, 255, 1)",
   },
 };
-
-console.log("DarkTheme", DarkTheme);

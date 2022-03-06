@@ -7,6 +7,7 @@ const StyledAbout = styled.section`
   background: ${(p) => p.theme.mainColors.primaryColor};
   background-position: center center;
   position: relative;
+  // border: 2px solid blue;
   @media (min-width: ${(props) => props.theme.media.desktop}) {
     height: 100vh;
   }
@@ -27,12 +28,13 @@ const StyledAbout = styled.section`
     );
   }
   & .aboutBtn {
-    position: absolute;
-    left: 50%;
-    bottom: 5%;
-    transform: translateX(-50%);
+    position: relative;
+    text-align: center;
     padding: 5rem;
     background: ${(p) => p.theme.mainColors.secondaryColor};
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
     &:before {
       content: "";
       width: 100%;
@@ -54,6 +56,10 @@ const StyledAbout = styled.section`
     @media (min-width: ${(props) => props.theme.media.desktop}) {
       margin: 0;
       margin-top: 5rem;
+      position: absolute;
+      left: 50%;
+      bottom: 5%;
+      transform: translateX(-50%);
     }
     & a {
       color: white;
@@ -62,36 +68,37 @@ const StyledAbout = styled.section`
     }
   }
   & .midPanel {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: auto;
-    transform: translate(-50%, -50%);
-    & .bigCircleBG {
+    position: relative;
+    margin: 0 auto;
+    @media (min-width: ${(props) => props.theme.media.desktop}) {
       position: absolute;
       left: 50%;
       top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    & .bigCircleBG {
+      position: relative;
       background-size: cover;
       background-image: url(${moon});
       background-position: center center;
       background-size: cover;
       border-radius: 50%;
-      padding: 3rem;
+      padding: 6rem;
       width: 90vw;
-      aspect-ratio: 1 / 1;
-      height: aspect-ratio;
+      height: 90vw;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      transform: translate(-50%, -50%);
-      z-index: -1;
       box-shadow: -3px 3px 8px 8px rgba(0, 0, 0, 0.25);
       @media (min-width: ${(props) => props.theme.media.tablet}) {
-        height: 50vw;
+        width: 60vw;
+        height: 60vw;
       }
       @media (min-width: ${(props) => props.theme.media.desktop}) {
+        min-width: 30vw;
         width: 30vw;
+        height: 30vw;
       }
       &:before {
         content: "";
@@ -123,29 +130,40 @@ const StyledAbout = styled.section`
         z-index: 3;
         font-weight: 700;
         padding: 0 1rem;
+        font-size: clamp(1.4rem, 1.8vw, 1.8rem);
         & span {
           color: ${(p) => p.theme.mainColors.secondaryColor};
           font-weight: 900;
-          color: #ddbf73;
+          color: #ffd875;
         }
       }
     }
   }
   & .mainPanel {
-    height: 25vw;
-    width: 25vw;
+    width: 90vw;
     padding: 3rem;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    // border: 2px solid red;
+    text-align: center;
+    // margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     @media (min-width: ${(props) => props.theme.media.desktop}) {
       position: absolute;
-      top: 10%;
       right: 0;
       margin-bottom: 0;
       text-align: left;
+      height: auto;
+      width: 25vw;
     }
     & .circleBG {
-      position: relative;
-      height: 50%;
-      width: 50%;
+      position: absolute;
+      height: 25vw;
+      width: 25vw;
+      top: 0;
+      left: 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -153,8 +171,9 @@ const StyledAbout = styled.section`
       background: ${(p) => p.theme.mainColors.primaryColor};
       border-radius: 100%;
       box-shadow: -3px 3px 8px 4px rgba(0, 0, 0, 0.25);
-      @media (min-width: ${(props) => props.theme.media.tablet}) {
-        margin-top: 6rem;
+      @media (min-width: ${(props) => props.theme.media.desktop}) {
+        height: 10vw;
+        width: 10vw;
       }
       &:before {
         content: "";
@@ -175,18 +194,19 @@ const StyledAbout = styled.section`
       }
     }
     & .textContainer {
-      position: absolute;
-      top: 5%;
-      left: 10%;
+      top: 0;
       & h2 {
         position: relative;
         color: ${(p) => p.theme.mainColors.offWhite};
-        left: -20%;
+        left: -15%;
+        text-align: center;
         text-shadow: 1px 1px 8px ${(p) => p.theme.mainColors.secondaryColor};
         padding-right: 2rem;
         font-size: clamp(3.2rem, 2.5vw, 4.2rem);
-        margin-top: 10%;
         line-height: 1.05;
+        @media (min-width: ${(props) => props.theme.media.desktop}) {
+          text-align: left;
+        }
       }
       & .infoTextBody {
         position: relative;
@@ -206,13 +226,24 @@ const StyledAbout = styled.section`
       }
     }
   }
-  & .mainPanel#bottomPanel {
-    position: absolute;
-    left: 0;
-    border: 3px solid green;
+  & .bottomPanel {
+    position: relative;
+    margin-top: 0;
+    // margin: 0 auto;
+    @media (min-width: ${(props) => props.theme.media.desktop}) {
+      position: absolute;
+      left: 0;
+      top: 60%;
+    }
     & .textContainer {
       top: 5%;
       left: 0%;
+    }
+    & .bigCircleBG {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
     }
   }
 `;
